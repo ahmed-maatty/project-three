@@ -11,26 +11,34 @@ function showmenu () {
 };
 
 
-const first = document.getElementById("st")
-const second = document.getElementById("nd")
-const third = document.getElementById("rd")
+// const first = document.getElementById("st")
+// const second = document.getElementById("nd")
+// const third = document.getElementById("rd")
 
-function closemenu() {
-    mnu.classList.toggle("is-active");
-    list.classList.toggle("is-active");
-}
+// function closemenu() {
+//     mnu.classList.toggle("is-active");
+//     list.classList.toggle("is-active");
+// }
 
-first.addEventListener("click",() => {
-    closemenu()
-})
+// first.addEventListener("click",() => {
+//     closemenu()
+// })
 
-second.addEventListener("click",() => {
-    closemenu()
-})
+// second.addEventListener("click",() => {
+//     closemenu()
+// })
 
-third.addEventListener("click",() => {
-    closemenu()
-})
+// third.addEventListener("click",() => {
+//     closemenu()
+// })
+
+let turnoff = document.getElementsByClassName("nav-item");
+
+for(let i = 0 ; i < turnoff.length ; i++){
+    turnoff[i].addEventListener('click', () => {
+        showmenu ()
+    })
+};
 
 let div = document.getElementById("up")
 
